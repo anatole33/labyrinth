@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 typedef struct game{
-    **grid;
+    int** grid;
     int x;
     int y;
     int width;
