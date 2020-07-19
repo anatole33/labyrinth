@@ -1,0 +1,15 @@
+creer type grille jeu "game" -> int*int / int x/ int y / int width/ int lentgh;
+
+creer:  game create_maze();
+     4 valeurs/symboles : 0-> passage / 1-> mur / 2-> personnage / 3 -> zone de fin
+
+creer : game game_play(game, int x1, int y1);
+    additionne x1 ou y1 au x ou y du game; (change la position du joueur)
+
+creer :  bool is_move_valid(game g, int x1, int y1);
+
+creer : void game_display(game g);
+
+creer: bool game_is_over(game g);
+
+et finir le main qui permet de jouer sur le terminal
