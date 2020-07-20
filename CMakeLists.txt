@@ -6,4 +6,6 @@ set(CMAKE_C_FLAGS "-std=c99 -g -Wall --coverage")
 set(CMAKE_C_FLAGS_DEBUG "-g -DDEBUG --coverage")
 set(CMAKE_C_FLAGS_RELEASE "-O3")
 
-add_executable( main main.c)
+set(headers maze_functions.h)
+
+add_executable( main maze_functions.c main.c)
